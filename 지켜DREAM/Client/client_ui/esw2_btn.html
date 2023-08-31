@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 파일 링크 -->
+    <link rel="stylesheet" href="./esw2_btn.css"/>
+    <link rel="stylesheet" href="./weather-icons.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <!-- <script src="module.js" type="module"></script> -->
+    <!-- Require the peer dependencies of hand-pose-detection. -->
+    <!-- Require the peer dependencies of face-detection. -->
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.7.2/socket.io.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/face_detection"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-core"></script>
+    
+    <!-- You must explicitly require a TF.js backend if you're not using the TF.js union bundle. -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-backend-webgl"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/face-detection"></script>
+    <script src="esw2_btn.js" defer></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- 웹캠 , opencv -->
+    <script type="text/javascript" src="https://unpkg.com/webcam-easy/dist/webcam-easy.min.js"></script>
+    <script src="Image.js" defer></script>
+    
+    <!-- 웹폰트 -->
+    <link href="https://fonts.googleapis.com/css2?family=Jua&family=Noto+Sans+KR:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <!-- <div class = "Nan" style = "width : 100%; height : 270px;"></div> -->
+    <div class = "void">
+        <img class = "esw2023" src = "../font/esw.png"></img>
+        <img class = "konkuk_univ" src = "../font/konkuk_img.png"></img>
+    </div>
+    <div class = "date_call">
+        <div class = "dateTime">
+            <div class = "Clock">
+                <span id = "daynight"></span>
+                <h1 id = "clock"></h1>
+            </div>
+            <span id = "calender">날짜</span>
+        </div>
+        <div class = "dust">
+            <div class = "pm10">
+                <div class = "dust_word_pm10">
+                    <span>grade</span>
+                    </br>
+                    <span style = "margin : 0 auto;">value</span>
+                </div>
+                <div class = "dust_icon_pm10">
+                    <span>아이콘</span>
+                </div>
+                <div class = "dust_grade_pm10"></div>
+            </div>
+            <div class = "pm25">
+                <div class = "dust_word_pm25">
+                    <span>grade</span>
+                    </br>
+                    <span style = "margin : 0 auto;">value</span>
+                </div>
+                <div class = "dust_icon_pm25">
+                    <span>아이콘</span>
+                </div>
+                <div class = "dust_grade_pm25"></div>
+            </div>
+        </div>
+    </div>
+    <div class = "weather">
+        <div class = "weather_img">
+            <!-- <img class = "weather_image" src = "" /> -->
+        </div>
+        <div class = "Location">
+            <br/>
+            <span class = "temp"></span>
+            <br/>
+            <span class = "local"></span>
+        </div>
+        <div class = "forecast_weather">
+            <div class = "next_weather" id = "next_weather1">
+                <span class = "day1"></span>
+                <span class = "date1" ></span>
+                <div class = "weather_img1"></div>
+                <span class = "temp1" style = "font-size : 20px;"></span>
+            </div>
+            <div class = "next_weather" id = "next_weather2">
+                <span class = "day2"></span>
+                <span class = "date2"></span>
+                <div class = "weather_img2"></div>
+                <span class = "temp2" style = "font-size : 20px;"></span>
+            </div>
+            <div class = "next_weather" id = "next_weather3">
+                <span class = "day3"></span>
+                <span class = "date3"></span>
+                <div class = "weather_img3"></div>
+                <span class = "temp3" style = "font-size : 20px;"></span>
+            </div>
+        </div>
+
+    </div>
+    <!-- 노트북 기준 720 540 -> 웹캠 사양에 따라 달라짐 -->
+    <video id = "cam" controls muted autoplay playsinline width = "720" height = "720"></video>
+    <div style = "width : 100%; height : 800px; background-color: inherit;"></div>
+    <canvas id = "cam_output" width = "600" height = "720" ></canvas>
+</body>
+<!-- tensorflow -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest" type = "text/javascript"> </script> -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.6/dat.gui.min.js"></script> -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/stats.js/r16/Stats.min.js"></script> -->
+<!-- <script async src="opencv.js" type = "text/javascript" onload = "onOpenCvReady();"></script> -->
+</html>

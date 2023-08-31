@@ -1,0 +1,266 @@
+/* color : #413d61 */
+body{
+    background-color: #413d61;
+    width : 800px;
+    height : 1200px;
+
+    margin : 0 auto;
+    font-family : 'Noto Sans KR';
+}
+
+i{
+    align-items: center;
+    text-align: center;
+
+    color : white;
+}
+
+/* .wi{
+    height : 100%;
+    width : 100%;
+} */
+
+span{
+    color : white;
+}
+
+.void{
+    background-color: rgb(241, 240, 235);
+    width : 90%;
+    height : 150px;
+
+    border : solid 1px rgb(136, 135, 135);
+    border-radius:10px;
+    display : flex;
+    
+}
+
+.esw2023{
+    width : 70%;
+    height : 100%;
+}
+
+.konkuk_univ{
+    width : 20%;
+    height : 70%;
+    
+    padding-top : 22px;
+    margin : 0 auto;
+}
+
+img {
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+  }
+
+.date_call{
+    background-color: #5a5a77;
+    width : 90%;
+    height : 15%;
+
+    border: solid 1px rgb(136, 135, 135);
+    border-radius:10px;
+
+    margin-top : 10px;
+    display : flex;
+}
+
+.dateTime{
+    margin-top : 5px;
+    padding-left : 20px;
+    width : 55%;
+    height : 100%;
+}
+
+.Clock{
+    width : 100%;
+    height : 40%;
+
+    display : flex;
+    padding-top : 20px;
+    padding-left : 20px;
+
+    color : white;
+}
+#daynight{
+    padding-top: 40px;
+    padding-right : 10px;
+    font-size : 20px;
+}
+
+#clock{
+    margin : 0 ;
+    font-weight : 300;
+    font-size : 60px;
+}
+
+#calender{
+    padding-left : 20px;
+    font-size:25px;
+    font-weight : 5px;
+    color : white;
+
+}
+
+.dust{
+    width : 55%;
+    height : 100%;
+    padding-right : 10px;
+}
+
+.pm10, .pm25{
+    background-color: #8181ac;
+    width : 100%;
+    height : 40%;
+    color : white;
+    border-radius: 10px;
+    border : solid 1px rgb(136, 135, 135);
+
+    margin-top : 10px;
+    margin-bottom: 5px;
+
+    font-size : 25px;
+    font-weight: 550;
+
+    display : flex;
+}
+
+.dust_word_pm10, .dust_word_pm25{
+    margin-left : 20px;
+    background-color: inherit;
+    width : 50%;
+    height : 60%;
+    border-radius : 10px;
+
+    font-size : 30px;
+
+}
+
+.dust_icon_pm10, .dust_icon_pm25{
+    background-color: inherit;
+    width: 25%;
+    height : 80%;
+    border-radius: 10px;
+
+    text-align: center;
+    margin-top : 5px;
+}
+
+.dust_grade_pm10, .dust_grade_pm25{
+    width : 20%;
+    height: 50%;
+
+    background-color: inherit;
+
+    border-radius : 10px;
+    margin-top : 15px;
+}
+
+.weather{
+    background-color: #5a5a77;
+    width : 90%;
+    height : 15%;
+
+    border : solid 1px rgb(136, 135, 135);
+    border-radius: 10px;
+    margin-top:10px;
+    margin-bottom : 10px;
+
+    display : flex;
+}
+
+.weather_img{
+    background-color: inherit;
+    width : 20%;
+    height : 70%;
+
+    border-radius : 10px;
+    margin-left : 10px;
+
+    align-items: center;
+    text-align: center;
+    vertical-align: middle;
+
+    font-size : 80px;
+    margin-top : 35px;
+    margin-left : 10px;
+}
+
+.weather_image{
+    width : 100%;
+    height : 100%;
+}
+
+.temp{
+    color : white;
+    font-size : 60px;
+    font-weight : 500;
+}
+
+.local{
+    color : white;
+    font-size : 20px;
+}
+
+.forecast_weather{
+    background-color: inherit;
+    width : 50%;
+    height: 100%;
+
+    border-radius : 10px;
+    display : flex;
+    margin-left : 70px;
+    align-items: center;
+}
+
+.next_weather{
+    width : 27%;
+    height : 80%;
+    background-color: #8181ac;
+
+    margin : 0 auto;
+    /* margin-top : 10px; */
+
+    border-radius : 5px;
+    border : solid 1px rgb(136, 135, 135);
+    
+    text-align: center;
+    align-items: center;
+}
+
+.weather_img1, .weather_img2, .weather_img3{
+    width : 80%;
+    height : 55%;
+    font-size : 50px;
+
+    align-items: center;
+    text-align: center;
+
+    margin-left: 10px;
+    margin-top : 8px;
+}
+
+#cam{
+    border : 1px solid rgb(136, 135, 135);
+    border-radius : 10px;
+    background-color: #5a5a77;
+
+    margin-top : 10px;
+    transform : rotate(-90deg);
+}
+
+/* #cam{
+    border : solid 2px white;
+    width : 90%;
+    height : 65%;
+
+
+} */
