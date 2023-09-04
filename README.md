@@ -44,4 +44,8 @@
 
 ## 사용 예시
 
+프로젝트 사용 예시에 대한 시연 동영상은 아래 링크에서 확인하실 수 있습니다.
+
 [![Video Label](http://img.youtube.com/vi/vh3Lfn03ru0/0.jpg)](https://youtu.be/vh3Lfn03ru0)
+
+[시연 동영상](https://youtu.be/vh3Lfn03ru0)
