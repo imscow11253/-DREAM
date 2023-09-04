@@ -44,5 +44,4 @@
 
 ## 사용 예시
 
-<iframe width="640" height="480" src="https://www.youtube.com/watch?v=vh3Lfn03ru0&ab_channel=%EC%A0%84%EC%9A%B0%EC%A7%84" frameborder="0" allowfullscreen></iframe>
-
+[![Video Label](http://img.youtube.com/vi/vh3Lfn03ru0/0.jpg)](https://youtu.be/vh3Lfn03ru0)
